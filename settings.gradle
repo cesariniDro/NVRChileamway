@@ -1,0 +1,20 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+    repositories {
+        google()
+        mavenCentral()
+        // Repositorio oficial de LibVLC para Android
+        maven { url "https://videolan.jfrog.io/videolan/vlc-android-snapshot/" }
+    }
+}
+
+rootProject.name = "NVRYoosee"
+include ':app'

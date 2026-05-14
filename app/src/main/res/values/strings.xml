@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NVR Yoosee</string>
+
+    <string-array name="stream_options">
+        <item>onvif1 — Principal 1080p</item>
+        <item>onvif2 — Sub-stream 480p</item>
+    </string-array>
+
+    <string-array name="segment_options">
+        <item>5 minutos</item>
+        <item>10 minutos</item>
+        <item>30 minutos</item>
+        <item>1 hora</item>
+    </string-array>
+</resources>

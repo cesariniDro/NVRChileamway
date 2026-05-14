@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#050508">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:padding="16dp">
+
+    <TextView
+        android:text="📡   CONEXIÓN RTSP — YOOSEE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#444466"
+        android:fontFamily="monospace"
+        android:textSize="9sp"
+        android:letterSpacing="0.1"
+        android:paddingBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/et_ip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="IP Cámara  (ej: 192.168.1.50)"
+        android:inputType="text"
+        android:textColor="#ebebff"
+        android:textColorHint="#333345"
+        android:fontFamily="monospace"
+        android:background="#0b0b12"
+        android:padding="13dp"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/et_port"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Puerto  (554)"
+        android:inputType="number"
+        android:textColor="#ebebff"
+        android:textColorHint="#333345"
+        android:fontFamily="monospace"
+        android:background="#0b0b12"
+        android:padding="13dp"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/et_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Usuario  (admin)"
+        android:inputType="text"
+        android:textColor="#ebebff"
+        android:textColorHint="#333345"
+        android:fontFamily="monospace"
+        android:background="#0b0b12"
+        android:padding="13dp"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/et_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña RTSP"
+        android:inputType="textPassword"
+        android:textColor="#ebebff"
+        android:textColorHint="#333345"
+        android:fontFamily="monospace"
+        android:background="#0b0b12"
+        android:padding="13dp"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:text="STREAM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#444466"
+        android:fontFamily="monospace"
+        android:textSize="9sp"
+        android:paddingBottom="4dp"/>
+
+    <Spinner
+        android:id="@+id/spinner_stream"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#0b0b12"
+        android:layout_marginBottom="12dp"
+        android:entries="@array/stream_options"/>
+
+    <TextView
+        android:text="SEGMENTOS NVR AUTOMÁTICO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#444466"
+        android:fontFamily="monospace"
+        android:textSize="9sp"
+        android:paddingBottom="4dp"
+        android:paddingTop="8dp"/>
+
+    <Spinner
+        android:id="@+id/spinner_segment"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#0b0b12"
+        android:layout_marginBottom="16dp"
+        android:entries="@array/segment_options"/>
+
+    <!-- RTSP preview -->
+    <TextView
+        android:text="URL RTSP GENERADA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#333345"
+        android:fontFamily="monospace"
+        android:textSize="8sp"
+        android:paddingBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/tv_rtsp_preview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#080f08"
+        android:padding="12dp"
+        android:textColor="#00e676"
+        android:fontFamily="monospace"
+        android:textSize="9sp"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:text="▶   GUARDAR Y CONECTAR"
+        android:textColor="#00e676"
+        android:fontFamily="monospace"
+        android:textSize="12sp"
+        android:backgroundTint="#0b1a0f"/>
+
+  </LinearLayout>
+</ScrollView>
